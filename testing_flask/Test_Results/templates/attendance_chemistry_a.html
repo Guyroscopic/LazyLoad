@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+
+{% for i in names_a: %}
+  <form action="/attendance/section_a/chemistry/saved_chemistry", method="post">
+    {{ i }}
+      <input type="number" name="attendance" min="0" max="240">
+      <input type="submit" name="attendance" value="Submit">
+
+
+
+  </form>
+
+{% endfor %}
+<a href="/attendance/section_a/chemistry/saved_chemistry/display">Display and Save</a>
+</body>
+</html>
